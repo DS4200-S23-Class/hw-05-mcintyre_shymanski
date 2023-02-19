@@ -1,0 +1,34 @@
+body {
+  font-family: Arial;
+}
+
+h1 {
+  text-align: center;
+}
+
+/* Set left column to 60% of page */
+.col1 {
+  width: 60%;
+    float: left;
+    min-height: 400px;
+    margin-top: 50px;
+}
+
+/* Set right column to 40% of page */
+.col2 {
+  width: 40%;
+    float: right;
+    min-height: 400px;
+    margin-top: 50px;
+}
+
+/* Hightlight point when hovered over */
+circle:hover {
+  fill: greenyellow;
+}
+
+/* Make a border for point to toggle */
+.addborder{
+  stroke-width: 5px;
+  stroke: red;
+}
