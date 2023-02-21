@@ -56,6 +56,14 @@ circle:hover {
   fill: blue;
 }
 
+.bar {
+  fill: blue;
+}
+
+.bar:hover {
+  fill: orange;
+}
+
 /* Add tooltip */
 .tooltip {
   position: absolute;
