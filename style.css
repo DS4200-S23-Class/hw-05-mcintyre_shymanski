@@ -1,25 +1,41 @@
+/* External Style Sheet */
+
+/* Make all font on webpage Arial */
 body {
   font-family: Arial;
 }
 
+/* Center the headers */
 h1 {
   text-align: center;
 }
 
+h3 {
+  text-align: center;
+}
+
+/* Add margins to row for better formatting */
+.row {
+	display: flex;
+  width: 100%;
+}
+
 /* Set left column to 60% of page */
-.col1 {
+#col1 {
   width: 60%;
-    float: left;
-    min-height: 400px;
-    margin-top: 50px;
+  min-height: 400px;
 }
 
 /* Set right column to 40% of page */
-.col2 {
+#col2 {
   width: 40%;
-    float: right;
-    min-height: 400px;
-    margin-top: 50px;
+  min-height: 400px;
+  margin-top: 20px;
+}
+
+/* make points blue */
+circle {
+	fill: blue;
 }
 
 /* Hightlight point when hovered over */
@@ -31,4 +47,21 @@ circle:hover {
 .addborder{
   stroke-width: 5px;
   stroke: red;
+}
+
+/* Make a removal of border for point to toggle */
+.removeborder{
+  stroke-width: 0px;
+  stroke: blue;
+  fill: blue;
+}
+
+/* Add tooltip */
+.tooltip {
+  position: absolute;
+  background-color: grey;
+  border:  solid;
+  border-width: 2px;
+  border-radius: 5px;
+  padding: 5px;
 }

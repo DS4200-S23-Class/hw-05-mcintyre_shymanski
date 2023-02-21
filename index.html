@@ -10,21 +10,94 @@
     <!-- Include D3 library -->
     <script src='js/d3.v6.1.1/d3.min.js'></script>
 
-    <title>hw 05</title>
+    <title>hw-05</title>
 </head>
 
 
 <body>
     <h1>hw-05: Interactive Graph with D3</h1>
 
-    <div id="col1">
-        <div id="vis1"></div>
+    <div class="row">
+        <div id="col1">
+            <div id="vis1"></div>
+            <div id="vis2"></div>
+        </div>
+
+        <div id="col2">  
+            <!-- Add text for last point clicked -->
+            <div id="last-point">
+            </div>
+            
+            <!-- Add page break -->
+            <br></br>
+
+            <form>
+                <!-- Dropdown for the x val -->
+                <label for="xDropdown">Select the x coordinate for the point you want to add.</label>
+                    <select id="xDropdown">
+                        <option value="1">1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>6</option>
+                        <option>7</option>
+                        <option>8</option>
+                        <option>9</option>
+                    </select>
+                
+                <!-- Add page break -->
+                <br></br>
+                
+                <!-- Dropdown for the y val -->
+                <label for="yDropdown">Select the y coordinate for the point you want to add.</label>
+                    <select id="yDropdown">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>6</option>
+                        <option>7</option>
+                        <option>8</option>
+                        <option>9</option>
+                    </select>
+
+                <!-- Add page break -->
+                <br></br>
+
+                <div>
+                    <button type="button" id="addPoint">Add point</button>
+                </div>
+
+            </form>
+
+        </div>
+
     </div>
 
-    <div id="col2">
-        
+    <!-- Create Smaller Header for Acknowledgements -->
+    <h3>Acknowledgements</h3>
+
+    <!-- Create Div for Acknowledgements -->
+    <div>
+        <ul>
+            <li>
+                <a href="https://gramener.github.io/d3js-playbook/events.html" target="_blank">Event Listeners</a>
+            </li>
+            <li>
+                <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Conditional_Operator" target="_blank">Conditional Operators in JS</a>
+            </li>
+            <li>
+                <a href="https://www.w3schools.com/tags/tag_label.asp" target="_blank">HTML Label Tags</a>
+            </li>
+            <li>
+                <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array" target="_blank">Arrays in JS</a>
+            </li>
+        </ul>
     </div>
 
+    <!-- Include your js at end of body -->
     <script src='js/main.js'></script>
 </body>
 
